@@ -23,7 +23,7 @@ export function WindowFrame({
   openWindow: (id: AppId) => void;
 }) {
   const meta = WINDOW_META[win.appId];
-  const render = getWindowRenderer(win.appId, openWindow);
+const render = getWindowRenderer(win.appId);
   const dragging = useRef(false);
   const offset = useRef({ x: 0, y: 0 });
 
